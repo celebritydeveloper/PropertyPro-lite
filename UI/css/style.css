@@ -439,3 +439,16 @@ img {
     color: var(--light-green);
     padding-right: 0.7rem;
 }
+
+.footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.copyright span {
+    font-size: 1.2rem;
+    padding-left: 0.7rem;
+}
