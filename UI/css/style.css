@@ -7,6 +7,7 @@
     --color: rgb(51, 51, 51);
     --light-green: rgb(67, 211, 177);
     --main-green: rgb(38, 163, 134);
+    --navy-blue: rgb(41, 56, 72);
     --white: rgb(255, 255, 255);
 }
 
@@ -262,5 +263,62 @@ img {
 .submit-icon {
     color: var(--white);
     font-size: 1.1rem;
+}
+
+.how {
+    display: grid;
+    grid-template-rows: 2;
+    margin: 45rem auto 0 auto;
+    width: 90%;
+}
+
+.how__title {
+    background-color: var(--white);
+    color: var(--main-green);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+.how__title h1 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.border {
+    background-color: var(--main-green);
+    height: 0.25rem;
+    margin-top: 0.2rem;
+    position: relative;
+    top: 1rem;
+    width: 6rem;
+}
+
+.how__steps {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 0.8rem;
+}
+
+.step--number {
+    background-color: var(--light-green);
+    color: var(--white);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    position: relative;
+    bottom: 53px;
+}
+
+.steps-card--footer {
+    background-color: var(--navy-blue);
+    padding: 0.5rem 0.7rem;
+    position: relative;
+    bottom: 4.2rem;
+}
+
+.steps-card--footer p {
+    color: var(--white);
+    margin: 0;
 }
 
