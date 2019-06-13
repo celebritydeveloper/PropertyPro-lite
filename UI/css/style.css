@@ -268,13 +268,26 @@ img {
 }
 
 .how {
+    background: url('../img/bg_video_1.jpg');
+    height: 450px;
+    margin-top: 45rem;
+}
+
+.how__container {
+    display: grid;
+    grid-template-rows: 2;
+    margin: 2rem auto 0 auto;
+    width: 90%;
+}
+
+ .offer {
     display: grid;
     grid-template-rows: 2;
     margin: 45rem auto 0 auto;
     width: 90%;
 }
 
-.how__title {
+.how__title, .offer__title {
     background-color: var(--white);
     color: var(--main-green);
     margin-bottom: 0.5rem;
@@ -282,7 +295,7 @@ img {
     text-transform: uppercase;
 }
 
-.how__title h1 {
+.how__title h1, .offer__title h1 {
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -324,3 +337,105 @@ img {
     margin: 0;
 }
 
+.offer {
+    margin-top: 1rem;
+}
+
+.offer__container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.offer__card {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+.offer__card img {
+    width: 100%;
+}
+
+.offer__card__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    top: 1.23rem;
+}
+
+.offer__card--price {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.offer__card--details {
+    align-items: center;
+    background-color: var(--light-green);
+    color: var(--white);
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    margin: 0;
+    margin-top: 1.15rem;
+    
+}
+
+.offer__card--details span {
+    padding-left: 0.7rem;
+}
+
+.offer__desc {
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: 3;
+    padding: 0 0.9rem 0.6rem 0.9rem;
+    
+}
+
+.offer__desc h3 {
+    color: var(--color);
+    font-weight: 450;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+
+}
+
+.offer__desc a:hover {
+    color: var(--light-green);
+    text-decoration: underline;
+}
+
+.offer--address {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.offer--address span {
+    color: var(--light-green);
+    padding-right: 0.5rem;
+}
+
+
+.offer__amenities {
+    border-bottom: 1px solid var(--light-color);
+    border-top: 3px solid var(--light-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 0.5rem;
+}
+
+.offer__amenities p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid var(--light-color);
+}
+
+.offer__amenities p:last-of-type {
+    border-right: none;
+}
+
+.offer__amenities span {
+    color: var(--light-green);
+    padding-right: 0.7rem;
+}
