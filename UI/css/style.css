@@ -166,8 +166,8 @@ img {
 /* Home Page Styling */
 
 .header {
-    height: 750px;
     background: url('../img/home_hero_image_1.jpg');
+    height: 650px;
     position: absolute;
     width: 100%;
 }
@@ -176,6 +176,7 @@ img {
     background-color: var(--light-green);
     color: var(--white);
     display: grid;
+    height: 8w0px;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3.5rem;
@@ -186,12 +187,17 @@ img {
     padding: 0 1rem;
 }
 
+.top-bar__box p {
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+
 .top-bar__box:first-of-type {
     border-left: 1px solid var(--white);
 }
 
 .top-bar__box address {
-    margin-top: 1.5rem;
+    margin-top: 0.4rem;
 }
 
 .top-bar--icon {
@@ -204,16 +210,14 @@ img {
     background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 0.3rem 3rem;
+    padding: 0.8rem 3rem;
 }
 
 .nav__logo img {
     height: 50px;
 }
 
-.nav__menu {
-    
-}
+
 
 .menu--list {
     list-style: none;
@@ -232,6 +236,31 @@ img {
 }
 
 .header__form {
-    background-color: var(--white)
+    background-color: var(--white);
+    height: 250px;
+    margin: 6rem auto 0 auto;
+    padding: 3rem 2rem;
+    width: 90%;
+}
+
+.header__form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+}
+
+.header__form select {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    width: 80%;
+}
+
+.header--submit {
+    grid-column: 4/3;
+}
+
+.submit-icon {
+    color: var(--white);
+    font-size: 1.1rem;
 }
 
