@@ -7,6 +7,7 @@
     --color: rgb(51, 51, 51);
     --light-green: rgb(67, 211, 177);
     --main-green: rgb(38, 163, 134);
+    --navy-blue: rgb(41, 56, 72);
     --white: rgb(255, 255, 255);
 }
 
@@ -27,6 +28,10 @@ body {
 a {
     color: var(--color);
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
 }
 
 .btn {
@@ -50,6 +55,27 @@ a {
     color: var(--main-green);
     transition: 0.3s all ease-in;
 }
+
+.btn-signup {
+    background-color: var(--main-green);
+    border: 1px solid var(--main-green);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-login {
+    background-color: var(--white);
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    color: var(--main-green);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
 
 .wrapper {
     display: grid;
@@ -135,4 +161,294 @@ a {
 
 .login-btn {
     margin-top: 1.2rem;
+}
+
+
+/* Home Page Styling */
+
+.header {
+    background: url('../img/home_hero_image_1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    position: absolute;
+    width: 100%;
+}
+
+.header__top-bar {
+    background-color: var(--light-green);
+    color: var(--white);
+    display: grid;
+    height: 8w0px;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3.5rem;
+}
+
+.top-bar__box {
+    border-right: 1px solid var(--white);
+    padding: 0 1rem;
+}
+
+.top-bar__box p {
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+.top-bar__box:first-of-type {
+    border-left: 1px solid var(--white);
+}
+
+.top-bar__box address {
+    margin-top: 0.4rem;
+}
+
+.top-bar--icon {
+    float: left;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.header__nav {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0.8rem 3rem;
+}
+
+.nav__logo img {
+    height: 50px;
+}
+
+
+
+.menu--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu--list li {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+}
+
+.menu--list a {
+    font-size: 1rem;
+    font-weight: 450; 
+}
+
+.header__form {
+    background-color: var(--white);
+    height: 250px;
+    margin: 6rem auto 0 auto;
+    padding: 3rem 2rem;
+    width: 90%;
+}
+
+.header__form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2;
+}
+
+.header__form select {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    width: 80%;
+}
+
+.header--submit {
+    grid-column: 4/3;
+}
+
+.submit-icon {
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.how {
+    background: url('../img/bg_video_1.jpg');
+    height: 450px;
+    margin-top: 45rem;
+}
+
+.how__container {
+    display: grid;
+    grid-template-rows: 2;
+    margin: 2rem auto 0 auto;
+    width: 90%;
+}
+
+ .offer {
+    display: grid;
+    grid-template-rows: 2;
+    margin: 45rem auto 0 auto;
+    width: 90%;
+}
+
+.how__title, .offer__title {
+    background-color: var(--white);
+    color: var(--main-green);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+.how__title h1, .offer__title h1 {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.border {
+    background-color: var(--main-green);
+    height: 0.25rem;
+    margin-top: 0.2rem;
+    position: relative;
+    top: 1rem;
+    width: 6rem;
+}
+
+.how__steps {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 0.8rem;
+}
+
+.step--number {
+    background-color: var(--light-green);
+    color: var(--white);
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    position: relative;
+    bottom: 53px;
+}
+
+.steps-card--footer {
+    background-color: var(--navy-blue);
+    padding: 0.5rem 0.7rem;
+    position: relative;
+    bottom: 4.2rem;
+}
+
+.steps-card--footer p {
+    color: var(--white);
+    margin: 0;
+}
+
+.offer {
+    margin-top: 1rem;
+}
+
+.offer__container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.offer__card {
+    display: grid;
+    grid-template-rows: 3;
+}
+
+.offer__card img {
+    width: 100%;
+}
+
+.offer__card__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    top: 1.23rem;
+}
+
+.offer__card--price {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.offer__card--details {
+    align-items: center;
+    background-color: var(--light-green);
+    color: var(--white);
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    margin: 0;
+    margin-top: 1.15rem;
+    
+}
+
+.offer__card--details span {
+    padding-left: 0.7rem;
+}
+
+.offer__desc {
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: 3;
+    padding: 0 0.9rem 0.6rem 0.9rem;
+    
+}
+
+.offer__desc h3 {
+    color: var(--color);
+    font-weight: 450;
+    margin-bottom: 0.2rem;
+    margin-top: 0.5rem;
+
+}
+
+.offer__desc a:hover {
+    color: var(--light-green);
+    text-decoration: underline;
+}
+
+.offer--address {
+    margin: 0.5rem 0 1rem 0;
+}
+
+.offer--address span {
+    color: var(--light-green);
+    padding-right: 0.5rem;
+}
+
+
+.offer__amenities {
+    border-bottom: 1px solid var(--light-color);
+    border-top: 3px solid var(--light-color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 0.5rem;
+}
+
+.offer__amenities p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid var(--light-color);
+}
+
+.offer__amenities p:last-of-type {
+    border-right: none;
+}
+
+.offer__amenities span {
+    color: var(--light-green);
+    padding-right: 0.7rem;
+}
+
+.footer {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.copyright span {
+    font-size: 1.2rem;
+    padding-left: 0.7rem;
 }
