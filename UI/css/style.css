@@ -168,6 +168,8 @@ img {
 
 .header {
     background: url('../img/home_hero_image_1.jpg');
+    background-position: center;
+    background-size: cover;
     height: 650px;
     position: absolute;
     width: 100%;
