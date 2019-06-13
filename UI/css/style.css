@@ -29,6 +29,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .btn {
     cursor: pointer;
     padding: 0.7rem 1rem;
@@ -50,6 +54,27 @@ a {
     color: var(--main-green);
     transition: 0.3s all ease-in;
 }
+
+.btn-signup {
+    background-color: var(--main-green);
+    border: 1px solid var(--main-green);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-login {
+    background-color: var(--white);
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    color: var(--main-green);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
 
 .wrapper {
     display: grid;
@@ -136,3 +161,77 @@ a {
 .login-btn {
     margin-top: 1.2rem;
 }
+
+
+/* Home Page Styling */
+
+.header {
+    height: 750px;
+    background: url('../img/home_hero_image_1.jpg');
+    position: absolute;
+    width: 100%;
+}
+
+.header__top-bar {
+    background-color: var(--light-green);
+    color: var(--white);
+    display: grid;
+    grid-gap: 0.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3.5rem;
+}
+
+.top-bar__box {
+    border-right: 1px solid var(--white);
+    padding: 0 1rem;
+}
+
+.top-bar__box:first-of-type {
+    border-left: 1px solid var(--white);
+}
+
+.top-bar__box address {
+    margin-top: 1.5rem;
+}
+
+.top-bar--icon {
+    float: left;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.header__nav {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0.3rem 3rem;
+}
+
+.nav__logo img {
+    height: 50px;
+}
+
+.nav__menu {
+    
+}
+
+.menu--list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu--list li {
+    display: inline-block;
+    padding: 1rem 1.3rem;
+}
+
+.menu--list a {
+    font-size: 1rem;
+    font-weight: 450; 
+}
+
+.header__form {
+    background-color: var(--white)
+}
+
