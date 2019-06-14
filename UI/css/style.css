@@ -66,11 +66,31 @@ img {
     padding: 0.5rem 1.5rem;
 }
 
+.btn-next {
+    background-color: var(--main-green);
+    border: 1px solid var(--main-green);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
 .btn-login {
     background-color: var(--white);
     border: 1px solid var(--light-color);
     border-radius: 4px;
     color: var(--main-green);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-previous {
+    background-color: var(--light-color);
+    border: 1px solid var(--light-color);
+    border-radius: 4px;
+    color: var(--white);
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
@@ -172,6 +192,15 @@ img {
     background-size: cover;
     height: 650px;
     position: absolute;
+    width: 100%;
+}
+
+.header-small {
+    background: url('../img/home_hero_image_1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    
     width: 100%;
 }
 
@@ -453,4 +482,69 @@ img {
 .copyright span {
     font-size: 1.2rem;
     padding-left: 0.7rem;
+}
+
+
+.post {
+    margin-top: 2rem;
+}
+
+.post__form {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    box-shadow: 1px 2px 10px 2px var(--light-color);
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    width: 70%;
+}
+
+.post__tab h1 {
+    color: var(--main-green);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.post__tab input[type="text"] {
+    width: 100%;
+}
+
+.post__tab select {
+    border-radius: 4px;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
+    width: 100%;
+}
+
+
+
+.form-field textarea{
+    width: 100%;
+}
+
+.post__form input[type="checkbox"] {
+    border: 1px solid var(--main-green);
+    height: 25px;
+    width: 25px;
+    background-color: var(--light-green);
+    margin-top: 0.9rem;
+}
+
+.post__form--button {
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.post__form--steps {
+    padding: 1rem;
+    text-align: center;
+}
+
+.post__form--steps .step {
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.2rem;
+    margin-left: 1rem;
+    width: 1.2rem;
 }
