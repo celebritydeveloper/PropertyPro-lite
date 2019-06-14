@@ -365,6 +365,8 @@ img {
     top: 1.23rem;
 }
 
+
+
 .offer__card--price {
     background-color: var(--navy-blue);
     color: var(--white);
@@ -387,11 +389,40 @@ img {
     padding-left: 0.7rem;
 }
 
+.offer__card__label {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
+    padding-left: 1rem;
+    position: relative;
+    bottom: 45px;
+}
+
+.offer__label--type, .offer__label--status {
+    align-content: center;
+    background-color: var(--light-green);
+    border-radius: 4px;
+    color: var(--white);
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: center;
+    padding: 0.2rem 0;
+    text-transform: uppercase;
+}
+
+.offer__label--status {
+    background-color: var(--navy-blue);
+    border-radius: 4px;
+    color: var(--white);
+}
+
 .offer__desc {
     background-color: var(--white);
     display: grid;
     grid-template-rows: 3;
     padding: 0 0.9rem 0.6rem 0.9rem;
+    position: relative;
+    bottom: 49px;
     
 }
 
