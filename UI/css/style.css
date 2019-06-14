@@ -639,7 +639,7 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
 }
 
-.single--label--type, .single--label--status {
+.single__label--type, .single__label--status {
     align-content: center;
     background-color: var(--light-green);
     border-radius: 4px;
@@ -651,7 +651,7 @@ img {
     text-transform: uppercase;
 }
 
-.single--label--status {
+.single__label--status {
     background-color: var(--navy-blue);
     border-radius: 4px;
     color: var(--white);
