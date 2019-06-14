@@ -200,9 +200,9 @@ img {
     background-position: center;
     background-size: cover;
     height: 350px;
-    
     width: 100%;
 }
+
 
 .header__top-bar {
     background-color: var(--light-green);
@@ -666,7 +666,7 @@ img {
 
 .single__label {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
 }
 
