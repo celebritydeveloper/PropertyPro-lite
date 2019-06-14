@@ -499,14 +499,35 @@ img {
     width: 70%;
 }
 
+.post__tab {
+    display: none;
+}
+
 .post__tab h1 {
     color: var(--main-green);
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
+.post__tab label {
+    color: var(--navy-blue);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.post__tab .form-field {
+    margin-bottom: 0.7rem;
+}
+
 .post__tab input[type="text"] {
+    color: var(--color);
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
     width: 100%;
+}
+
+.post__tab input[type="text"]: {
+    outline: var(--main-green);
 }
 
 .post__tab select {
@@ -519,6 +540,8 @@ img {
 
 
 .form-field textarea{
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
     width: 100%;
 }
 
@@ -532,6 +555,7 @@ img {
 
 .post__form--button {
     margin-bottom: 1rem;
+    margin-top: 0.8rem;
     text-align: right;
 }
 
@@ -547,4 +571,12 @@ img {
     height: 1.2rem;
     margin-left: 1rem;
     width: 1.2rem;
+}
+
+.step.active {
+    opacity: 1;
+}
+  
+.step.finish {
+    background-color: var(--light-green);
 }
