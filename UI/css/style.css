@@ -196,11 +196,19 @@ img {
 }
 
 .header-small {
-    background: url('../img/home_hero_image_1.jpg');
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)), url('../img/home_hero_image_1.jpg');
     background-position: center;
     background-size: cover;
     height: 350px;
     width: 100%;
+}
+
+.header-small__title {
+    align-items: center;
+    color: var(--white);
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
 }
 
 
