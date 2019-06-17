@@ -413,6 +413,11 @@ img {
     padding-left: 0.7rem;
 }
 
+.offer__card--details:hover span {
+    padding-left: 1.2rem;
+    transition: .5s all ease;
+}
+
 .offer__card__label {
     display: grid;
     grid-gap: 10px;
