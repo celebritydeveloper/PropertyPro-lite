@@ -1,0 +1,22 @@
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .signup {
+        border-radius: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+  
+    .signup__info {
+        display: none;
+    }
+
+    .signup__form {
+        width: 100%;
+    }
+
+    .submit-btn {
+        margin-top: 1rem;
+        text-align: left;
+    }
+    
+  }
