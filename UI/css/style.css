@@ -191,8 +191,8 @@ img {
 }
 
 .top-bar__box p {
-    margin-bottom: 0.3rem;
-    margin-top: 0.3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0rem;
 }
 
 .top-bar__box:first-of-type {
@@ -200,7 +200,7 @@ img {
 }
 
 .top-bar__box address {
-    margin-top: 0.4rem;
+    margin-top: 0.1rem;
 }
 
 .top-bar--icon {
@@ -249,19 +249,22 @@ img {
 }
 
 .header__form form {
+    border: 1px solid var(--light-green);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 2;
 }
 
 .header__form select {
+    display: flex;
     font-size: 1.1rem;
+    justify-content: flex-end;
     padding: 0.6rem 1rem;
     width: 80%;
 }
 
 .header--submit {
-    grid-column: 4/3;
+    grid-area: 3/5;
 }
 
 .submit-icon {
@@ -371,6 +374,7 @@ img {
     background-color: var(--navy-blue);
     color: var(--white);
     padding: 0.5rem;
+    padding-left: 0.7rem;
 }
 
 .offer__card--details {
@@ -382,7 +386,10 @@ img {
     justify-content: center;
     margin: 0;
     margin-top: 1.15rem;
-    
+}
+
+.offer__card--details a {
+    color: var(--white);
 }
 
 .offer__card--details span {
