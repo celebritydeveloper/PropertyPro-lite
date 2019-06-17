@@ -47,6 +47,7 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.7rem 1.2rem;
+    text-transform: uppercase;
 }
 
 .btn-submit:hover {
@@ -167,7 +168,8 @@ img {
 /* Home Page Styling */
 
 .header {
-    background: url('../img/home_hero_image_1.jpg');
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)), url('../img/home_hero_image_1.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 650px;
@@ -221,7 +223,6 @@ img {
 }
 
 
-
 .menu--list {
     list-style: none;
     margin: 0;
@@ -242,6 +243,7 @@ img {
 
 .header__form {
     background-color: var(--white);
+    border-radius: 6px;
     height: 250px;
     margin: 6rem auto 0 auto;
     padding: 3rem 2rem;
@@ -249,27 +251,39 @@ img {
 }
 
 .header__form form {
-    border: 1px solid var(--light-green);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
+   /* border: 1px solid var(--light-green); */
+    text-align: center;
+    
+}
+
+.header__form .form-field {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
 }
 
 .header__form select {
-    display: flex;
+    border-radius: 4px;
     font-size: 1.1rem;
-    justify-content: flex-end;
     padding: 0.6rem 1rem;
-    width: 80%;
+    width: 90%;
 }
 
 .header--submit {
-    grid-area: 3/5;
+    display: block;
+    margin-left: 280px;
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
-.submit-icon {
+.header--submit .submit-icon {
     color: var(--white);
     font-size: 1.1rem;
+    padding-right: 0.3rem;
+}
+
+.header--submit:hover .submit-icon {
+    color: var(--light-green);
 }
 
 .how {
