@@ -47,6 +47,7 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.7rem 1.2rem;
+    text-transform: uppercase;
 }
 
 .btn-submit:hover {
@@ -64,16 +65,18 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
 }
 
 .btn-login {
     background-color: var(--white);
-    border: 1px solid var(--light-color);
+    border: 1px solid var(--light-green);
     border-radius: 4px;
     color: var(--main-green);
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
 }
 
 
@@ -167,7 +170,8 @@ img {
 /* Home Page Styling */
 
 .header {
-    background: url('../img/home_hero_image_1.jpg');
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)), url('../img/home_hero_image_1.jpg');
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 650px;
@@ -191,8 +195,8 @@ img {
 }
 
 .top-bar__box p {
-    margin-bottom: 0.3rem;
-    margin-top: 0.3rem;
+    margin-bottom: 0.1rem;
+    margin-top: 0rem;
 }
 
 .top-bar__box:first-of-type {
@@ -200,7 +204,7 @@ img {
 }
 
 .top-bar__box address {
-    margin-top: 0.4rem;
+    margin-top: 0.1rem;
 }
 
 .top-bar--icon {
@@ -221,7 +225,6 @@ img {
 }
 
 
-
 .menu--list {
     list-style: none;
     margin: 0;
@@ -238,10 +241,12 @@ img {
 .menu--list a {
     font-size: 1rem;
     font-weight: 450; 
+    text-transform: uppercase;
 }
 
 .header__form {
     background-color: var(--white);
+    border-radius: 6px;
     height: 250px;
     margin: 6rem auto 0 auto;
     padding: 3rem 2rem;
@@ -249,24 +254,39 @@ img {
 }
 
 .header__form form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2;
+   /* border: 1px solid var(--light-green); */
+    text-align: center;
+    
+}
+
+.header__form .form-field {
+    display: inline-block;
+    text-align: left;
+    width: 30%;
 }
 
 .header__form select {
+    border-radius: 4px;
     font-size: 1.1rem;
     padding: 0.6rem 1rem;
-    width: 80%;
+    width: 90%;
 }
 
 .header--submit {
-    grid-column: 4/3;
+    display: block;
+    margin-left: 280px;
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
-.submit-icon {
+.header--submit .submit-icon {
     color: var(--white);
     font-size: 1.1rem;
+    padding-right: 0.3rem;
+}
+
+.header--submit:hover .submit-icon {
+    color: var(--light-green);
 }
 
 .how {
@@ -371,6 +391,7 @@ img {
     background-color: var(--navy-blue);
     color: var(--white);
     padding: 0.5rem;
+    padding-left: 0.7rem;
 }
 
 .offer__card--details {
@@ -382,11 +403,19 @@ img {
     justify-content: center;
     margin: 0;
     margin-top: 1.15rem;
-    
+}
+
+.offer__card--details a {
+    color: var(--white);
 }
 
 .offer__card--details span {
     padding-left: 0.7rem;
+}
+
+.offer__card--details:hover span {
+    padding-left: 1.2rem;
+    transition: .5s all ease;
 }
 
 .offer__card__label {
