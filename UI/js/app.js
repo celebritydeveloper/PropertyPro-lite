@@ -10,3 +10,11 @@ function openNav () {
     });
 }
 
+function closeNav () {
+    close.addEventListener('click', function () {
+        menu.classList.remove('active-menu');
+    });
+}
+
+
+

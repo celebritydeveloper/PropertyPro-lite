@@ -60,8 +60,10 @@
     .nav__menu {
         background: var(--white);
         box-shadow: 2px 2px 10px 2px rgb(192, 191, 191);
+        display: none;
         float: right;
         height: 100%;
+        overflow: hidden;
         padding-left: 1rem;
         padding-top: 2rem;
         position: fixed;
@@ -72,6 +74,7 @@
     }
 
     .active-menu {
+        display: block;
         width: 250px;
     }
 
@@ -80,37 +83,57 @@
     }
 
     .nav__mobile-close {
-        font-size: 1.3rem;
-        font-weight: 600;
+        color: var(--main-green);
+        display: block;
+
         position: absolute;
-        top: 0.5rem;
+        top: 0.2rem;
+        transform: rotate(-45deg);
         right: 1.8rem;
     }
 
+    .nav__mobile-close span{
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .nav__mobile-close span:hover{
+        transform: rotate(-90deg);
+    }
 
     .header__form {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4;
-        padding: 1rem 1rem;
+        height: 350px;
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .header__form form{
+        display: block;
+        padding: 0.2rem 0.5rem;
+        width: 100%;
     }
 
     .header__form .form-field {
         display: block;
+        margin-bottom: 0.3rem;
         padding: 0;
         
         width: 100%;
     }
 
     .header__form select {
-        
+        width: 100%;
     }
 
-    .header__form .header--submit button {
+    .header__form .header--submit {
         display: block;
-    margin-left: 20px;
-    margin-top: 1.5rem;
-    width: 50%;
+        margin-top: 0.8rem;
+        width: 100%;
+    }
+
+    .header__form .header--submit button{
+        width: 100%;
     }
 
     .how {
