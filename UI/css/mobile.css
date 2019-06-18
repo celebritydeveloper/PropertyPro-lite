@@ -85,7 +85,6 @@
     .nav__mobile-close {
         color: var(--main-green);
         display: block;
-
         position: absolute;
         top: 0.2rem;
         transform: rotate(-45deg);
@@ -102,19 +101,19 @@
         transform: rotate(-90deg);
     }
 
-    .header__form {
+    .header__form, .properties__header__form {
         height: 350px;
         margin-top: 2rem;
         padding: 0.5rem 1rem;
     }
 
-    .header__form form{
+    .header__form form, .properties__header__form form{
         display: block;
         padding: 0.2rem 0.5rem;
         width: 100%;
     }
 
-    .header__form .form-field {
+    .header__form .form-field, .properties__header__form .form-field {
         display: block;
         margin-bottom: 0.3rem;
         padding: 0;
@@ -122,17 +121,17 @@
         width: 100%;
     }
 
-    .header__form select {
+    .header__form select, .properties__header__form select {
         width: 100%;
     }
 
-    .header__form .header--submit {
+    .header__form .header--submit, .properties__header__form .properties__header--submit  {
         display: block;
         margin-top: 0.8rem;
         width: 100%;
     }
 
-    .header__form .header--submit button{
+    .header__form .header--submit button, .properties__header--submit button {
         width: 100%;
     }
 
@@ -182,5 +181,33 @@
         padding-bottom: 0 1rem 20px 1rem;
         margin-top: 2rem;
         text-align: center;
+    }
+
+    
+    /* Properties Page Styling */
+
+    .properties {
+        margin-top: 1.5rem;
+    }
+
+    .properties-header {
+        height: 500px;
+    }
+
+    .properties__title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .properties__title form {
+        margin-top: -22px;
+    }
+
+    .offer__container {
+        margin: 0 auto;
     }
   }
