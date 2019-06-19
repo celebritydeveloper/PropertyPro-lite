@@ -66,6 +66,36 @@ img {
     padding: 0.5rem 1.5rem;
 }
 
+.btn-delete {
+    background-color: rgb(199, 35, 35);
+    border: 1px solid rgb(199, 35, 35);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-edit {
+    background-color: rgb(35, 46, 199);
+    border: 1px solid rgb(35, 46, 199);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-sold {
+    background-color: rgb(209, 209, 18);
+    border: 1px solid rgb(209, 209, 18);
+    border-radius: 4px;
+    color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
 .btn-next {
     background-color: var(--main-green);
     border: 1px solid var(--main-green);
@@ -830,6 +860,7 @@ th {
     background-color: var(--main-green);
     color: var(--white);
     height: 50px;
+    text-transform: uppercase;
     vertical-align: bottom;
 }
 
@@ -837,10 +868,32 @@ th, td {
     border-bottom: 1px solid #ddd;
     padding: 15px;
     text-align: left; 
-    width: 100%;
+    
 }
 
 
 tr:nth-child(even) {
     background-color: var(--white);
+}
+
+.all-listing__table1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 100px));
+    grid-template-rows: 1;
+    grid-gap: 2rem;
+    grid-row-gap: 10px;
+    overflow-x:auto;
+    width: 100%;
+}
+
+
+.field {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.field h3 {
+    
+    color: var(--main-green);
+    
 }
