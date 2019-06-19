@@ -196,19 +196,26 @@ img {
 }
 
 .header-small {
-    background: url('../img/home_hero_image_1.jpg');
+    background: linear-gradient(to right, rgba(3, 3, 3, 0.7), rgba(3, 3, 3, 0.7)), url('../img/home_hero_image_1.jpg');
     background-position: center;
     background-size: cover;
     height: 350px;
-    
     width: 100%;
+}
+
+.header-small__title {
+    align-items: center;
+    color: var(--white);
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
 }
 
 .header__top-bar {
     background-color: var(--light-green);
     color: var(--white);
     display: grid;
-    height: 8w0px;
+    height: 60px;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3.5rem;
@@ -249,7 +256,13 @@ img {
     height: 50px;
 }
 
+.nav__mobile-bar {
+    display: none;
+}
 
+.nav__mobile-close {
+    display: none;
+}
 
 .menu--list {
     list-style: none;

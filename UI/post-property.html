@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PropertyPro-lite  Home</title>
+    <title>Post Property | PropertyPro-lite</title>
     <link rel="shortcut icon" href="./img/andela.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
@@ -35,6 +36,10 @@
                     <img src="./img/sendit-logo-1.png" alt="">
                 </div>
 
+                <div class="nav__mobile-bar">
+                    <span class="fa fa-bars" onclick="openNav()"></span>
+                </div>
+
                 <div class="nav__menu">
                     <ul class="menu--list">
                         <li><a href="index.html">Home</a></li>
@@ -43,6 +48,9 @@
                         <li><a href="login.html" class="btn btn-login">Login</a></li>
                         <li><a href="register.html" class="btn-signup">Signup</a></li>
                     </ul>
+                    <div class="nav__mobile-close">
+                        <span onclick="closeNav()">+</span>
+                    </div>
                 </div>
             </nav>
 
