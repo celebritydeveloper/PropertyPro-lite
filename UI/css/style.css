@@ -287,7 +287,13 @@ img {
     height: 50px;
 }
 
+.nav__mobile-bar {
+    display: none;
+}
 
+.nav__mobile-close {
+    display: none;
+}
 
 .menu--list {
     list-style: none;
@@ -840,6 +846,10 @@ img {
 
 /* All Listing Page Styling*/
 
+.all-listings {
+    display: grid;
+}
+
 .all-listing {
     margin: 0 auto;
     width: 90%;
@@ -876,24 +886,3 @@ tr:nth-child(even) {
     background-color: var(--white);
 }
 
-.all-listing__table1 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 100px));
-    grid-template-rows: 1;
-    grid-gap: 2rem;
-    grid-row-gap: 10px;
-    overflow-x:auto;
-    width: 100%;
-}
-
-
-.field {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.field h3 {
-    
-    color: var(--main-green);
-    
-}
