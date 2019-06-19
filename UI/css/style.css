@@ -66,7 +66,7 @@ img {
     outline: none;
     padding: 0.5rem 1.5rem;
     text-transform: uppercase;
-<<<<<<< HEAD
+
 }
 
 .btn-delete {
@@ -139,8 +139,7 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
-=======
->>>>>>> b06ea9dfc8ef0c1ed1b43a769c9f51e8018f4556
+
 }
 
 .btn-login {
@@ -152,19 +151,6 @@ img {
     outline: none;
     padding: 0.5rem 1.5rem;
     text-transform: uppercase;
-<<<<<<< HEAD
-}
-
-.btn-previous {
-    background-color: var(--light-color);
-    border: 1px solid var(--light-color);
-    border-radius: 4px;
-    color: var(--white);
-    font-size: 1.2rem;
-    outline: none;
-    padding: 0.5rem 1.5rem;
-=======
->>>>>>> b06ea9dfc8ef0c1ed1b43a769c9f51e8018f4556
 }
 
 
@@ -332,13 +318,6 @@ img {
     display: none;
 }
 
-<<<<<<< HEAD
-.nav__mobile-close {
-    display: none;
-}
-
-=======
->>>>>>> gh-pages
 .menu--list {
     list-style: none;
     margin: 0;
@@ -366,25 +345,6 @@ img {
     width: 90%;
 }
 
-<<<<<<< HEAD
-.properties__header__form .form-field {
-    display: inline-block;
-}
-
-.properties__header__form select {
-    border-radius: 4px;
-    font-size: 1.1rem;
-    padding: 0.6rem 1rem;
-    text-align: left;
-    width: 80%;
-}
-
-.properties__header--submit {
-    display: block;
-}
-
-.properties__header--submit .submit-icon {
-=======
 .header__form form {
    /* border: 1px solid var(--light-green); */
     text-align: center;
@@ -412,17 +372,12 @@ img {
 }
 
 .header--submit .submit-icon {
->>>>>>> b06ea9dfc8ef0c1ed1b43a769c9f51e8018f4556
     color: var(--white);
     font-size: 1.1rem;
     padding-right: 0.3rem;
 }
 
-<<<<<<< HEAD
-.properties__header--submit:hover .submit-icon {
-=======
 .header--submit:hover .submit-icon {
->>>>>>> b06ea9dfc8ef0c1ed1b43a769c9f51e8018f4556
     color: var(--light-green);
 }
 
@@ -943,50 +898,6 @@ img {
 }
 
 
-<<<<<<< HEAD
-/* All Listing Page Styling*/
-
-.all-listings {
-    display: grid;
-}
-
-.all-listing {
-    margin: 0 auto;
-    width: 90%;
-}
-
-.all-listing__table {
-    overflow-x:auto;
-    width: 100%;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-
-th {
-    background-color: var(--main-green);
-    color: var(--white);
-    height: 50px;
-    text-transform: uppercase;
-    vertical-align: bottom;
-}
-
-th, td {
-    border-bottom: 1px solid #ddd;
-    padding: 15px;
-    text-align: left; 
-    
-}
-
-
-tr:nth-child(even) {
-    background-color: var(--white);
-}
-
-=======
 /* Properties Page Styling */
 
 .properties-header {
@@ -1091,4 +1002,3 @@ tr:nth-child(even) {
 .pagnation__number a:hover {
     color: var(--main-green);
 }
->>>>>>> gh-pages
