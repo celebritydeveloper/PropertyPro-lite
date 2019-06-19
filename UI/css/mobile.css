@@ -1,20 +1,53 @@
 @media (min-width: 320px) and (max-width: 480px) {
 
-    .signup, .login {
+    .wrapper {
+        display: block;
+    }
+
+    .signup, .login{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3;
         border-radius: 0;
+        height: 100vh;
         margin-top: 0;
+        margin-bottom: 0;
+        overflow: auto;
         width: 100%;
     }
   
     .signup__info, .login__info {
-        display: none;
-    }
-
-    .signup__form, .login__form {
+        float: none;
+        height: 220px;
+        padding: 0.5rem 0.9rem;
         width: 100%;
     }
 
-    .submit-btn, .login-btn{
+    .login__form {
+        padding-top: 1rem;
+    }
+
+    .signup__info img, .signup__info h3, .login__info img,  .login__info h3 {
+        display: none;
+    }
+
+    .signup__info--login, .login__info--signup {
+        margin-bottom: 0;
+    }
+
+    .signup__form, .login__form {
+        float: none;
+        height: 100%;
+        padding-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .submit-btn {
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .login-btn {
         margin-top: 1rem;
         text-align: left;
     }

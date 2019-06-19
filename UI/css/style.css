@@ -76,7 +76,7 @@ a {
     width: 35%;
 }
 
-.signup__info--back {
+.signup__info--back, .login__info--back {
     background-color: var(--white);
     border: 1px solid var(--light-green);
     border-radius: 50%;
@@ -86,6 +86,14 @@ a {
     height: 2.2rem;
     padding-top: 0.23rem;
     width: 2.2rem;
+}
+
+.signup__info--back a, .login__info--back a {
+    color: var(--light-green);
+}
+
+.signup__info--login a, .login__info--login a {
+    color: yellow;
 }
 
 .signup__form, .login__form {
