@@ -67,6 +67,16 @@ img {
 }
 
 .btn-delete {
+    background-color: var(--white);
+    border: 1px solid rgb(199, 35, 35);
+    border-radius: 4px;
+    color: rgb(199, 35, 35);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-delete:hover {
     background-color: rgb(199, 35, 35);
     border: 1px solid rgb(199, 35, 35);
     border-radius: 4px;
@@ -76,7 +86,18 @@ img {
     padding: 0.5rem 1.5rem;
 }
 
+
 .btn-edit {
+    background-color: var(--white);
+    border: 1px solid rgb(35, 46, 199);
+    border-radius: 4px;
+    color: rgb(35, 46, 199);;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-edit:hover {
     background-color: rgb(35, 46, 199);
     border: 1px solid rgb(35, 46, 199);
     border-radius: 4px;
@@ -86,11 +107,22 @@ img {
     padding: 0.5rem 1.5rem;
 }
 
-.btn-sold {
+
+.btn-sold:hover  {
     background-color: rgb(209, 209, 18);
     border: 1px solid rgb(209, 209, 18);
     border-radius: 4px;
     color: var(--white);
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.5rem 1.5rem;
+}
+
+.btn-sold {
+    background-color: var(--white);
+    border: 1px solid rgb(197, 197, 7);
+    border-radius: 4px;
+    color: var(--color);
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
@@ -246,7 +278,7 @@ img {
     background-color: var(--light-green);
     color: var(--white);
     display: grid;
-    height: 8w0px;
+    height: 60px;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3.5rem;
