@@ -1184,32 +1184,34 @@ tr:nth-child(even) {
 
 /* All Agents Page Styling */
 
-.all-agents {
+.all-agents,
+.single-agent {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0 auto;
     width: 90%;
 }
 
-.agents__card,
-.agent__card {
+.agents__card {
     box-shadow: 1px 1px 10px 2px var(--light-color);
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-bottom: 2rem;
 }
 
-.agents__img {
+.agents__img,
+.agent__img {
     height: 100%;
 }
 
-.agents__img img {
+.agents__img img,
+.agent__img img {
     height: 100%;
 }
 
-.agents__detail {
-    background-color: var(--white);
-    
+.agents__detail,
+.agent__detail {
+    background-color: var(--white); 
 }
 
 .agents--name, .agents--company, .agents--desc, .agents__contact {
@@ -1269,6 +1271,22 @@ tr:nth-child(even) {
 
 
 /* Agent profile page styling */
+
+.agent__card {
+    background-color: var(--white);
+    box-shadow: 1px 1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-rows: 2;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.topper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+}
+
 
 .agent__offer__title {
     background-color: var(--white);
