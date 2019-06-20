@@ -141,7 +141,6 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
-
 }
 
 
@@ -358,15 +357,10 @@ img {
     display: none;
 }
 
-.nav__mobile-close {
-    display: none;
-}
-
 
 .nav__mobile-close {
     display: none;
 }
-
 
 .menu--list {
     list-style: none;
@@ -396,6 +390,11 @@ img {
 }
 
 
+.properties__header__form .form-field {
+    display: inline-block;
+}
+
+
 .header__form {
     background-color: var(--white);
     border-radius: 6px;
@@ -418,6 +417,7 @@ img {
     width: 95%;
     
 }
+
 
 .header__form form {
    /* border: 1px solid var(--light-green); */
@@ -983,7 +983,48 @@ img {
     width: 100%;
 }
 
-.aside__form .form-field button:hover {
+
+
+
+/* All Listing Page Styling*/
+
+.all-listings {
+    display: grid;
+}
+
+.all-listing {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.all-listing__table {
+    overflow-x:auto;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    background-color: var(--main-green);
+    color: var(--white);
+    height: 50px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left; 
+    
+}
+
+
+tr:nth-child(even) {
     background-color: var(--white);
     border: 1px solid var(--navy-blue);
     color: var(--navy-blue);
@@ -1120,4 +1161,3 @@ img {
 .pagnation__number a:hover {
     color: var(--main-green);
 }
-
