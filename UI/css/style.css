@@ -961,10 +961,14 @@ img {
     display: grid;
     grid-template-rows: 4;
     margin-top: 2rem;
-    
 }
 
-.aside__form form {
+
+.agents__aside__form {
+    margin-top: 0;
+}
+
+.aside__form form{
     padding: 1.5rem 1.3rem;
 }
 
@@ -1033,6 +1037,13 @@ tr:nth-child(even) {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+
+
+
+
+
+
 
 
 /* Properties Page Styling */
@@ -1163,4 +1174,84 @@ tr:nth-child(even) {
 
 .pagnation__number a:hover {
     color: var(--main-green);
+}
+
+
+
+
+
+
+/* All Agents Page Styling */
+
+.agents__card {
+    box-shadow: 1px 1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-height: 300px;
+    margin-bottom: 2rem;
+}
+
+.agents__img {
+    height: 100%;
+}
+
+.agents__img img {
+    height: 100%;
+}
+
+.agents__detail {
+    background-color: var(--white);
+    
+}
+
+.agents--name, .agents--company, .agents--desc, .agents__contact {
+    padding: 0 1rem;
+}
+
+.agents--name {
+    color: var(--navy-blue);
+    margin-bottom: 0;
+}
+
+.agents--company {
+    color: var(--light-color);
+    margin-top: 0.3rem;
+}
+
+
+.agents__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.agents--email, .agents--phone {
+    color: var(--navy-blue);
+    font-weight: 500;
+}
+
+.agents--email span, .agents--phone span{
+    color: var(--light-green);
+    padding-right: 0.3rem;
+}
+
+.agents__listings {
+    border-top: 1px solid var(--light-color);
+    color: var(--light-green);
+    font-weight: lighter;
+    padding-top: 0.5rem;
+}
+
+.agents__listings a {
+    color: var(--light-green);
+    padding-left: 1.2rem;
+    
+}
+
+.agents__listings span {
+    padding-left: 0.3rem;
+}
+
+.agents__listings:hover span {
+    padding-left: 0.7rem;
+    transition: .4s all ease-in-out;
 }
