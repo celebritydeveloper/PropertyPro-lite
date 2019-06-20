@@ -262,6 +262,7 @@
   
   
     /* Single Property Page Styling */
+    
 
     .header-small {
         height: 250px;
@@ -281,6 +282,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
+        margin-top: 2rem;
     }
 
     .single__title {
