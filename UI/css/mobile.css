@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (max-width: 480px) {
+
     .wrapper {
         display: block;
     }
@@ -52,6 +53,10 @@
     .login-btn {
         margin-top: 1rem;
         text-align: left;
+    }
+
+
+        display: none;
     }
 
     .signup__form, .login__form {
@@ -255,12 +260,17 @@
         margin: 0 auto;
     }
 
+
   
   
   
   
   
   
+
+
+
+
     /* Single Property Page Styling */
 
     .header-small {
@@ -332,6 +342,26 @@
 
     .all-listing__table button {
         margin-bottom: 0.2rem;
+    }
+
+
+    /* Single Property Page Styling */
+
+    .post__form {
+        width: 90%;
+    }
+
+    .post__tab h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .post__tab input[type='checkbox'] {
+        display: block;
+    }
+
+    .post__form--button button {
+        display: inline-block;
     }
 
   }
