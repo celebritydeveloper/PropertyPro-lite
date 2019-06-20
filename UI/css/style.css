@@ -69,6 +69,16 @@ img {
     text-transform: uppercase;
 }
 
+
+.btn-signup:hover {
+    background-color: var(--white);
+    border: 1px solid var(--main-green);
+    color: var(--main-green);
+    transition: .4s all ease-in-out;
+}
+
+
+
 .btn-login {
     background-color: var(--white);
     border: 1px solid var(--light-green);
@@ -80,6 +90,13 @@ img {
     text-transform: uppercase;
 }
 
+
+.btn-login:hover {
+    background-color: var(--light-green);
+    border: 1px solid var(--light-green);
+    color: var(--white);
+    transition: .4s all ease-in-out;
+}
 
 .wrapper {
     display: grid;
@@ -359,6 +376,10 @@ img {
     padding: 0.3rem 0.8rem;
     position: relative;
     bottom: 53px;
+}
+
+.steps--card img {
+    width: 100%;
 }
 
 .steps-card--footer {
