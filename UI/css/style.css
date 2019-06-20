@@ -491,7 +491,8 @@ img {
 }
 
 
-.how__title h1, .offer__title h1 {
+.how__title h1,
+.offer__title h1 {
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -1190,11 +1191,11 @@ tr:nth-child(even) {
     width: 90%;
 }
 
-.agents__card {
+.agents__card,
+.agent__card {
     box-shadow: 1px 1px 10px 2px var(--light-color);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    
     margin-bottom: 2rem;
 }
 
@@ -1261,4 +1262,74 @@ tr:nth-child(even) {
 .agents__listings:hover span {
     padding-left: 0.7rem;
     transition: .4s all ease-in-out;
+}
+
+
+
+
+
+/* Agent profile page styling */
+
+.agent__offer__title {
+    background-color: var(--white);
+    color: var(--main-green);
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.agent__offer__title h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.agent__property {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2rem;
+}
+
+.agent__property__img {
+    height: 100%;
+}
+
+
+.agent__property__img img {
+    height: 100%;
+}
+
+
+
+.agent__property__desc {
+    box-shadow: 1px -1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    padding: 0 1.5rem 1.3rem 1.5rem;
+}
+
+.agent__property--title {
+    font-size: 1.3rem;
+    font-weight: 420;
+    text-transform: uppercase;
+}
+
+.agent__property--title:hover a {
+    color: var(--light-green);
+    transition: .3s all ease-in-out;
+}
+
+.agent__desc__price {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+}
+
+.agent__property--price {
+    color: var(--main-green);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 0.5rem;
 }
