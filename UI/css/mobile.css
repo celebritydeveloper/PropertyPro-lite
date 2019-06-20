@@ -52,4 +52,288 @@
         text-align: left;
     }
     
+
+    .signup__form, .login__form {
+        width: 100%;
+    }
+
+    .submit-btn, .login-btn{
+        margin-top: 1rem;
+        text-align: left;
+    }
+
+    .header {
+        height: 500px;
+    }
+
+    .header__top-bar {
+        display: none;
+    }
+
+    .header__nav {
+        background-color: var(--white);
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .nav__logo {
+        float: left;
+        width: 70%;
+    }
+
+    .nav__mobile-bar {
+        display: block;
+        float: right;
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
+        text-align: right;
+    }
+
+    .nav__mobile-bar span {
+        color: var(--main-green);
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav__logo img {
+        width: 100%;
+    }
+
+    .nav__menu {
+        background: var(--white);
+        box-shadow: 2px 2px 10px 2px rgb(192, 191, 191);
+        display: none;
+        float: right;
+        height: 100%;
+        overflow: hidden;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 0;
+        z-index: 1;
+    }
+
+    .active-menu {
+        display: block;
+        width: 250px;
+    }
+
+    .menu--list li{
+        display: block;
+    }
+
+    .nav__mobile-close {
+        color: var(--main-green);
+        display: block;
+        position: absolute;
+        top: 0.2rem;
+        transform: rotate(-45deg);
+        right: 1.8rem;
+    }
+
+    .nav__mobile-close span{
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .nav__mobile-close span:hover{
+        transform: rotate(-90deg);
+    }
+
+    .header__form, .properties__header__form {
+        height: 350px;
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .header__form form, .properties__header__form form{
+        display: block;
+        padding: 0.2rem 0.5rem;
+        width: 100%;
+    }
+
+    .header__form .form-field, .properties__header__form .form-field {
+        display: block;
+        margin-bottom: 0.3rem;
+        padding: 0;
+        
+        width: 100%;
+    }
+
+    .header__form select, .properties__header__form select {
+        width: 100%;
+    }
+
+    .header__form .header--submit, .properties__header__form .properties__header--submit  {
+        display: block;
+        margin-top: 0.8rem;
+        width: 100%;
+    }
+
+    .header__form .header--submit button, .properties__header--submit button {
+        width: 100%;
+    }
+
+    .how {
+        height: 1200px;
+        margin-top: 1.5rem;
+    }
+
+    .how__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        margin: 2rem auto 0 auto;
+        width: 90%;
+    }
+
+    .how__steps {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        margin: 0.8rem auto 0 auto;
+
+    }
+
+    .steps--card {
+        margin-bottom: -3rem;
+    }
+
+    .steps--card img {
+        width: 100%;
+    }
+    
+    .offer__container {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 4;
+        margin: 0.8rem auto 0 auto;
+    }
+
+    .offer__card {
+        margin-bottom: -3rem;
+    }
+
+    .footer {
+        padding-bottom: 0 1rem 20px 1rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    
+    /* Properties Page Styling */
+
+    .properties {
+        margin-top: 1.5rem;
+    }
+
+    .properties-header {
+        height: 500px;
+    }
+
+    .properties__title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        overflow: hidden;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
+    .properties__title form {
+        margin-top: -22px;
+    }
+
+    .offer__container {
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+    /* Single Property Page Styling */
+
+    .header-small {
+        height: 250px;
+    }
+
+
+    .header-small__title {
+        align-items: center;
+        color: var(--white);
+        display: flex;
+        font-size: 1.5rem;
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+
+    .single-property {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .single__title {
+        /* border: 1px solid var(--light-color); */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .single--name {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 0.4rem;
+        margin-top: 0.3rem;
+    }
+
+    .single--price {
+        font-size: 1.2rem;
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+
+    .single--location {
+        font-size: 0.7rem;
+    }
+
+    .single__sub {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .single__sub--facility p{
+        display: block;
+        margin: 0.2rem 0;
+    }
+
+
+
+
+
+
+    /* All Agent Listings Page Styling */
+
+    .all-listing {
+        margin-top: 2rem;
+    }
+
+    .all-listing__table button {
+        margin-bottom: 0.2rem;
+    }
+
+    .wrapper {
+        display: block;
+    }
+
   }
