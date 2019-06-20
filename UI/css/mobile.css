@@ -23,9 +23,11 @@
         width: 100%;
     }
 
+
     .login__form {
         padding-top: 1rem;
     }
+
 
     .signup__info img, .signup__info h3, .login__info img,  .login__info h3 {
         display: none;
@@ -47,11 +49,12 @@
         text-align: left;
     }
 
+
     .login-btn {
         margin-top: 1rem;
         text-align: left;
     }
-    
+
 
     .signup__form, .login__form {
         width: 100%;
@@ -330,10 +333,6 @@
 
     .all-listing__table button {
         margin-bottom: 0.2rem;
-    }
-
-    .wrapper {
-        display: block;
     }
 
   }
