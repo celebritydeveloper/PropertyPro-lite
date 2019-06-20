@@ -15,3 +15,4 @@ function closeNav () {
         menu.classList.remove('active-menu');
     });
 }
+
