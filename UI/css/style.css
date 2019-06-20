@@ -1304,6 +1304,11 @@ tr:nth-child(even) {
     margin: 0;
 }
 
+.agent__detail button {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
 .agent__property {
     background-color: var(--white);
     display: grid;
