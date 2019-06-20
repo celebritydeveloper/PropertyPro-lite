@@ -611,7 +611,10 @@ img {
     bottom: 45px;
 }
 
-.offer__label--type, .offer__label--status {
+.offer__label--type,
+.offer__label--status,
+.agent__label--type,
+.agent__label--status{
     align-content: center;
     background-color: var(--light-green);
     border-radius: 4px;
@@ -623,7 +626,8 @@ img {
     text-transform: uppercase;
 }
 
-.offer__label--status {
+.offer__label--status,
+.agent__label--status {
     background-color: var(--navy-blue);
     border-radius: 4px;
     color: var(--white);
