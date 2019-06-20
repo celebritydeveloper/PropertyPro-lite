@@ -1,5 +1,9 @@
 @media  (max-width: 480px) {
 
+    .wrapper {
+        display: block;
+    }
+
     .signup, .login {
         border-radius: 0;
         margin-top: 0;
@@ -54,7 +58,7 @@
     }
 
     .nav__logo img {
-        width: 100%;
+        width: 100px;
     }
 
     .nav__menu {
