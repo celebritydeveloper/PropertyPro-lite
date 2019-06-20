@@ -211,6 +211,7 @@ img {
     justify-content: center;
 }
 
+
 .header__top-bar {
     background-color: var(--light-green);
     color: var(--white);
@@ -539,7 +540,7 @@ img {
     width: 100%;
 }
 
-.post__tab input[type="text"]: {
+.post__tab input[type="text"] {
     outline: var(--main-green);
 }
 
