@@ -341,7 +341,8 @@
 
     /* All Agents Page Styling */
 
-    .all-agents {
+    .all-agents,
+    .single-agent {
         margin: 3rem auto 0 auto;
         width: 90%;
     }
@@ -373,6 +374,32 @@
 
     .aside {
         margin-top: 2.5rem;
+    }
+
+
+
+
+
+
+    /* Single Agent Profile Page Styling */
+
+    .agent__card {
+        padding: 0;
+    }
+
+    .topper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agent__img img {
+        width: 100%;
+    }
+
+
+    .agent__desc {
+        padding: 0 1rem;
     }
 
   }
