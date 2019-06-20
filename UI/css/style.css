@@ -1025,9 +1025,6 @@ th, td {
 
 tr:nth-child(even) {
     background-color: var(--white);
-    border: 1px solid var(--navy-blue);
-    color: var(--navy-blue);
-    transition: .4s all ease-in;
 }
 
 
