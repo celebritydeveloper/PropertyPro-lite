@@ -1183,11 +1183,18 @@ tr:nth-child(even) {
 
 /* All Agents Page Styling */
 
+.all-agents {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+    width: 90%;
+}
+
 .agents__card {
     box-shadow: 1px 1px 10px 2px var(--light-color);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-height: 300px;
+    
     margin-bottom: 2rem;
 }
 
