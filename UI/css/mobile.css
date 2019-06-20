@@ -145,13 +145,11 @@
         transform: rotate(-90deg);
     }
 
-
     .header__form, .properties__header__form {
         height: 350px;
         margin-top: 2rem;
         padding: 0.5rem 1rem;
     }
-
 
     .header__form form, .properties__header__form form{
         display: block;
@@ -257,12 +255,12 @@
         margin: 0 auto;
     }
 
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
     /* Single Property Page Styling */
 
     .header-small {
@@ -319,6 +317,7 @@
         display: block;
         margin: 0.2rem 0;
     }
+
 
 
 

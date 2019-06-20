@@ -276,6 +276,11 @@ img {
 }
 
 
+
+
+
+
+
 /* Home Page Styling */
 
 .header {
@@ -362,6 +367,7 @@ img {
     display: none;
 }
 
+
 .menu--list {
     list-style: none;
     margin: 0;
@@ -413,9 +419,6 @@ img {
     
 }
 
-
-
-=======
 .header__form form {
    /* border: 1px solid var(--light-green); */
     align-items: center;
@@ -973,10 +976,18 @@ img {
     background-color: var(--navy-blue);
     border: 1px solid var(--navy-blue);
     color: var(--white);
+    cursor: pointer;
     font-size: 1.1rem;
     padding: 0.7rem 1rem;
     text-transform: uppercase;
     width: 100%;
+}
+
+.aside__form .form-field button:hover {
+    background-color: var(--white);
+    border: 1px solid var(--navy-blue);
+    color: var(--navy-blue);
+    transition: .4s all ease-in;
 }
 
 
