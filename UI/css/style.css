@@ -216,7 +216,7 @@ img {
     background-color: var(--light-green);
     color: var(--white);
     display: grid;
-    height: 8w0px;
+    height: 60px;
     grid-gap: 0.2rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3.5rem;
@@ -257,7 +257,13 @@ img {
     height: 50px;
 }
 
+.nav__mobile-bar {
+    display: none;
+}
 
+.nav__mobile-close {
+    display: none;
+}
 
 .menu--list {
     list-style: none;
