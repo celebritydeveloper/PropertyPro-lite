@@ -388,7 +388,6 @@
     }
 
     .topper {
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
     }
@@ -400,6 +399,38 @@
 
     .agent__desc {
         padding: 0 1rem;
+    }
+
+    .agent__offer__title h2{
+        font-size: 1rem;
+    }
+
+    .agent__property {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agent__property--title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .agent__desc__price {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        margin-bottom: 0.6rem;
+    }
+
+    .agent__property--price {
+        margin-top: 0.3rem;
+    }
+
+    .agent__label--type,
+    .agent__label--status {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+        width: 110px;
     }
 
   }
