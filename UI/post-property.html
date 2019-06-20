@@ -56,27 +56,27 @@
            
             <section class="post">
                 <div class="post__form">
-                    <form action="">
+                    <form action="" id="regForm">
                         <div class="post__tab">
                             <div class="form-field"> 
                                 <h1>Basic Property Information</h1>
                                 <label for="">Property Name</label>
-                                <input type="text">
+                                <input type="text" oninput="this.className = ''">
                             </div>
                             <div class="form-field">
                                 <label for="">Property Location</label>
-                                <input type="text">
+                                <input type="text" oninput="this.className = ''">
                             </div>
                             <div class="form-field">
                                 <label for="">Property Name</label>
-                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                                <textarea name="" id="" cols="30" rows="10" oninput="this.className = ''"></textarea>
                             </div>
                         </div>
                         <div class="post__tab">
                             <h1>Property Type</h1> 
                             <div class="form-field">
                                 <label for="">Property Type</label>
-                                <select name="" id="">
+                                <select name="" id="" oninput="this.className = ''">
                                     <option value="" selected>Any Type</option>
                                     <option value="">Apartment</option>
                                     <option value="">Bungalow</option>
@@ -85,7 +85,7 @@
                             </div>
                             <div class="form-field">
                                 <label for="">Bed Room</label>
-                                <select name="" id="">
+                                <select name="" id="" oninput="this.className = ''">
                                     <option value="" selected>1</option>
                                     <option value="">2</option>
                                     <option value="">3</option>
@@ -96,7 +96,7 @@
                             </div>
                             <div class="form-field">
                                     <label for="">Bath Room</label>
-                                <select name="" id="">
+                                <select name="" id="" oninput="this.className = ''">
                                     <option value="" selected>1</option>
                                     <option value="">2</option>
                                     <option value="">3</option>
@@ -106,17 +106,17 @@
                             </div>
                             <div class="form-field">
                                 <label for="">Price</label>
-                                <input type="text">
+                                <input type="text" oninput="this.className = ''">
                             </div>
                         </div>
                         <div class="post__tab">
                             <h1>Property Amenities</h1>
                             <div class="form-field"> 
-                                <input type="checkbox"> Wifi
-                                <input type="checkbox"> Heating
-                                <input type="checkbox"> Generator House
-                                <input type="checkbox"> Water
-                                <input type="checkbox"> Security
+                                <input type="checkbox" oninput="this.className = ''"> Wifi
+                                <input type="checkbox" oninput="this.className = ''"> Heating
+                                <input type="checkbox" oninput="this.className = ''"> Generator House
+                                <input type="checkbox" oninput="this.className = ''"> Water
+                                <input type="checkbox" oninput="this.className = ''"> Security
                             </div>
                         </div>
                         <div class="post__tab">
@@ -127,12 +127,12 @@
                             </div>
                         </div>
 
-                        <div class="form-field post__tab--button">
-                            <button type="button" class="btn btn-signup">Next</button>
-                            <button type="button" class="btn btn-login">Previous</button>
+                        <div class="form-field post__form--button">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="btn btn-previous">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)" class="btn btn-next">Next</button>
                         </div>
 
-                        <div class="post__tab--steps">
+                        <div class="post__form--steps">
                             <span class="step"></span>
                             <span class="step"></span>
                             <span class="step"></span>
@@ -143,8 +143,10 @@
             </section>
             
         </main>
-            <footer class="footer">
-                <p class="copyright"> Designed by The Boring Dude. Let's Have a Drink on <span><i class="fab fa-github"></i></span> <a href="https://github.com/theboringdude"></a></p>
-            </footer>
+        <footer class="footer">
+            <p class="copyright"> Designed by The Boring Dude. Let's Have a Drink on <span><i class="fab fa-github"></i></span> <a href="https://github.com/theboringdude"></a></p>
+        </footer>
+
+        <script src="./js/app.js"></script>
 </body>
 </html>
