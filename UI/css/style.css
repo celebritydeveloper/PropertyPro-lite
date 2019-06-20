@@ -353,12 +353,14 @@ img {
     display: none;
 }
 
-
 .nav__mobile-close {
     display: none;
 }
 
 
+.nav__mobile-close {
+    display: none;
+}
 
 .menu--list {
     list-style: none;
@@ -377,7 +379,7 @@ img {
     text-transform: uppercase;
 }
 
-.header__form, .properties__header__form {
+.properties__header__form {
     background-color: var(--white);
     border-radius: 6px;
     height: 250px;
@@ -387,6 +389,33 @@ img {
     width: 90%;
 }
 
+
+.header__form {
+    background-color: var(--white);
+    border-radius: 6px;
+    height: 250px;
+    margin: 7rem auto 0 auto;
+    padding: 3rem 2rem;
+    width: 80%;
+}
+
+.header__form form {
+   /* border: 1px solid var(--light-green); */
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1;
+    grid-gap: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+    
+}
+
+
+
+=======
 .header__form form {
    /* border: 1px solid var(--light-green); */
     align-items: center;
@@ -426,6 +455,7 @@ img {
 .header--submit:hover .submit-icon {
     color: var(--light-green);
 }
+
 
 .how {
     background: url('../img/bg_video_1.jpg');
@@ -965,24 +995,49 @@ img {
 }
 
 .properties__header__form  {
-    margin-top: 20rem;
+    height: 200px;
+    margin-top: 19.5rem;
     width: 100%;
 }
 
 .properties__header__form form {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.2rem;
+     /* border: 1px solid var(--light-green); */
+     align-items: center;
+     display: grid;
+     justify-items: center;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 1;
+     grid-gap: 20px;
+     margin: 0 auto;
+     text-align: center;
+     width: 95%;
+}
+
+
+.properties__header__form  .submit-icon {
+    color: var(--white);
+    font-size: 1.1rem;
+    padding-right: 0.3rem;
+}
+
+.properties__header__form:hover .submit-icon {
+    color: var(--light-green);
+}
+
+.properties__header__form .form-field {
+    text-align: left;
+    width: 100%;
 }
 
 .properties__header__form select {
+    border-radius: 4px;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
     width: 100%;
 }
 
 .properties__header--submit {
-    position: relative;
-    right: -100%;
-    top: 2rem;
+    margin-top: 2.3rem;
 }
 
 .properties__title {

@@ -1,5 +1,4 @@
 @media (min-width: 320px) and (max-width: 480px) {
-
     .wrapper {
         display: block;
     }
@@ -54,7 +53,6 @@
         margin-top: 1rem;
         text-align: left;
     }
-
 
     .signup__form, .login__form {
         width: 100%;
@@ -161,17 +159,11 @@
         width: 100%;
     }
 
-
     .header__form .form-field, .properties__header__form .form-field {
         display: block;
         margin-bottom: 0.3rem;
         padding: 0;
         
-        width: 100%;
-    }
-
-
-    .header__form select {
         width: 100%;
     }
 
@@ -184,7 +176,6 @@
         margin-top: 0.8rem;
         width: 100%;
     }
-
 
     .header__form .header--submit button, .properties__header--submit button {
         width: 100%;
