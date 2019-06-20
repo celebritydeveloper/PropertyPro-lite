@@ -100,7 +100,7 @@
     }
 
     .nav__logo img {
-        width: 100%;
+        width: 100px;
     }
 
     .nav__menu {
@@ -147,11 +147,13 @@
         transform: rotate(-90deg);
     }
 
+
     .header__form, .properties__header__form {
         height: 350px;
         margin-top: 2rem;
         padding: 0.5rem 1rem;
     }
+
 
     .header__form form, .properties__header__form form{
         display: block;
@@ -159,11 +161,17 @@
         width: 100%;
     }
 
+
     .header__form .form-field, .properties__header__form .form-field {
         display: block;
         margin-bottom: 0.3rem;
         padding: 0;
         
+        width: 100%;
+    }
+
+
+    .header__form select {
         width: 100%;
     }
 
@@ -176,6 +184,7 @@
         margin-top: 0.8rem;
         width: 100%;
     }
+
 
     .header__form .header--submit button, .properties__header--submit button {
         width: 100%;
