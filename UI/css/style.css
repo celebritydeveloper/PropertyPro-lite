@@ -1012,6 +1012,7 @@ img {
 
 .all-listings {
     display: grid;
+    margin-top: 2rem;
 }
 
 .all-listing {
