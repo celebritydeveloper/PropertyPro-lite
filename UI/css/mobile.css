@@ -1,9 +1,12 @@
 @media (min-width: 320px) and (max-width: 480px) {
+
     .wrapper {
         display: block;
     }
 
-    .signup, .login{
+    .signup, .login {
+        border-radius: 0;
+        margin-top: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3;
@@ -255,6 +258,18 @@
         margin: 0 auto;
     }
 
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+
   
   
   
@@ -262,6 +277,7 @@
   
   
     /* Single Property Page Styling */
+    
 
     .header-small {
         height: 250px;
@@ -320,6 +336,24 @@
     }
 
 
+    /* Single Property Page Styling */
+
+    .post__form {
+        width: 90%;
+    }
+
+    .post__tab h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .post__tab input[type='checkbox'] {
+        display: block;
+    }
+
+    .post__form--button button {
+        display: inline-block;
+    }
 
 
 
@@ -687,7 +721,108 @@
         .all-listing__table button {
             margin-bottom: 0.2rem;
         }
-    
-      }
+  
 
-    
+
+
+
+
+
+    /* All Agents Page Styling */
+
+    .all-agents,
+    .single-agent {
+        margin: 3rem auto 0 auto;
+        width: 90%;
+    }
+
+    .agents__card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agents__img img {
+        width: 100%;
+    }
+
+    .agents--name, .agents--company, .agents--desc, .agents__contact {
+        padding: 0 0.3rem 0 1rem;
+    }
+
+    .agents__contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+
+    .agents--email, .agents--phone {
+        margin: 0.3rem 0;
+    }
+
+    .aside {
+        margin-top: 2.5rem;
+
+    }
+
+
+
+
+
+
+
+    /* Single Agent Profile Page Styling */
+
+    .agent__card {
+        padding: 0;
+    }
+
+    .topper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agent__img img {
+        width: 100%;
+    }
+
+
+    .agent__desc {
+        padding: 0 1rem;
+    }
+
+    .agent__offer__title h2{
+        font-size: 1rem;
+    }
+
+    .agent__property {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agent__property--title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .agent__desc__price {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        margin-bottom: 0.6rem;
+    }
+
+    .agent__property--price {
+        margin-top: 0.3rem;
+    }
+
+    .agent__label--type,
+    .agent__label--status {
+        display: inline-block;
+        margin: 0;
+        text-align: center;
+        width: 110px;
+    }
+
+
+  }

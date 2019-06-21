@@ -357,6 +357,9 @@ img {
     display: none;
 }
 
+.nav__mobile-close {
+    display: none;
+}
 
 .nav__mobile-close {
     display: none;
@@ -491,7 +494,8 @@ img {
 }
 
 
-.how__title h1, .offer__title h1 {
+.how__title h1,
+.offer__title h1 {
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -610,7 +614,10 @@ img {
     bottom: 45px;
 }
 
-.offer__label--type, .offer__label--status {
+.offer__label--type,
+.offer__label--status,
+.agent__label--type,
+.agent__label--status{
     align-content: center;
     background-color: var(--light-green);
     border-radius: 4px;
@@ -622,7 +629,8 @@ img {
     text-transform: uppercase;
 }
 
-.offer__label--status {
+.offer__label--status,
+.agent__label--status {
     background-color: var(--navy-blue);
     border-radius: 4px;
     color: var(--white);
@@ -803,7 +811,7 @@ img {
 .single-property {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
     width: 90%;
 }
 
@@ -961,16 +969,29 @@ img {
     display: grid;
     grid-template-rows: 4;
     margin-top: 2rem;
-    
 }
 
-.aside__form form {
+
+.agents__aside__form {
+    margin-top: 0;
+}
+
+.aside__form form{
     padding: 1.5rem 1.3rem;
 }
 
-.aside__form .form-field input {
+.aside__form .form-field input,
+.aside__form .form-field select {
     width: 100%;
 }
+
+.aside__form .form-field select {
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 0.8rem 0.5rem;
+}
+
+
 
 .aside__form .form-field button {
     background-color: var(--navy-blue);
@@ -978,6 +999,7 @@ img {
     color: var(--white);
     cursor: pointer;
     font-size: 1.1rem;
+    margin-top: 0.4rem;
     padding: 0.7rem 1rem;
     text-transform: uppercase;
     width: 100%;
@@ -1033,6 +1055,13 @@ tr:nth-child(even) {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+
+
+
+
+
+
 
 
 /* Properties Page Styling */
@@ -1163,4 +1192,192 @@ tr:nth-child(even) {
 
 .pagnation__number a:hover {
     color: var(--main-green);
+}
+
+
+
+
+
+
+/* All Agents Page Styling */
+
+.all-agents,
+.single-agent,
+.user {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 2rem auto 0 auto;
+    width: 90%;
+}
+
+.agents__card {
+    box-shadow: 1px 1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 2rem;
+}
+
+.agents__img,
+.agent__img {
+    height: 100%;
+}
+
+.agents__img img,
+.agent__img img {
+    height: 100%;
+}
+
+.agents__detail,
+.agent__detail {
+    background-color: var(--white); 
+}
+
+.agents--name, .agents--company, .agents--desc, .agents__contact {
+    padding: 0 1rem;
+}
+
+.agents--name {
+    color: var(--navy-blue);
+    margin-bottom: 0;
+}
+
+.agents--company {
+    color: var(--light-color);
+    margin-top: 0.3rem;
+}
+
+
+.agents__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.agents--email, .agents--phone {
+    color: var(--navy-blue);
+    font-weight: 500;
+}
+
+.agents--email span, .agents--phone span{
+    color: var(--light-green);
+    padding-right: 0.3rem;
+}
+
+.agents__listings {
+    border-top: 1px solid var(--light-color);
+    color: var(--light-green);
+    font-weight: lighter;
+    padding-top: 0.5rem;
+}
+
+.agents__listings a {
+    color: var(--light-green);
+    padding-left: 1.2rem;
+    
+}
+
+.agents__listings span {
+    padding-left: 0.3rem;
+}
+
+.agents__listings:hover span {
+    padding-left: 0.7rem;
+    transition: .4s all ease-in-out;
+}
+
+
+
+
+
+/* Agent profile page styling */
+
+.agent__card {
+    background-color: var(--white);
+    box-shadow: 1px 1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-rows: 2;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.topper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.agent__offer__title {
+    background-color: var(--white);
+    color: var(--main-green);
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.agent__offer__title h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.agent__detail button {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.agent__property {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2rem;
+}
+
+.agent__property__img {
+    height: 100%;
+}
+
+
+.agent__property__img img {
+    height: 100%;
+}
+
+
+
+.agent__property__desc {
+    box-shadow: 1px -1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    padding: 0 1.5rem 1.3rem 1.5rem;
+}
+
+.agent__property--title {
+    font-size: 1.3rem;
+    font-weight: 420;
+    text-transform: uppercase;
+}
+
+.agent__property--title:hover a {
+    color: var(--light-green);
+    transition: .3s all ease-in-out;
+}
+
+.agent__desc__price {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+}
+
+.agent__property--price {
+    color: var(--main-green);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+
+/* User Profile Page Styling */
+
+.user {
+    margin-top: 2rem;
 }
