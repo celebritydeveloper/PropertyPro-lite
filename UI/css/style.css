@@ -357,6 +357,9 @@ img {
     display: none;
 }
 
+.nav__mobile-close {
+    display: none;
+}
 
 .nav__mobile-close {
     display: none;

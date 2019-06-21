@@ -3,7 +3,9 @@
         display: block;
     }
 
-    .signup, .login{
+    .signup, .login {
+        border-radius: 0;
+        margin-top: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3;
@@ -255,6 +257,8 @@
         margin: 0 auto;
     }
 
+
+
   
   
   
@@ -319,6 +323,24 @@
     }
 
 
+    /* Single Property Page Styling */
+
+    .post__form {
+        width: 90%;
+    }
+
+    .post__tab h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .post__tab input[type='checkbox'] {
+        display: block;
+    }
+
+    .post__form--button button {
+        display: inline-block;
+    }
 
 
 
