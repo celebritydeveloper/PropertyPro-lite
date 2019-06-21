@@ -1186,7 +1186,7 @@ tr:nth-child(even) {
 .all-agents {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
     width: 90%;
 }
 
@@ -1218,6 +1218,11 @@ tr:nth-child(even) {
 .agents--name {
     color: var(--navy-blue);
     margin-bottom: 0;
+}
+
+.agents--name:hover a {
+    color: var(--light-green);
+    transition: .3s all ease-in-out;
 }
 
 .agents--company {
