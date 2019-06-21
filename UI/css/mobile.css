@@ -1,11 +1,10 @@
 @media (min-width: 320px) and (max-width: 480px) {
+
     .wrapper {
         display: block;
     }
 
-    .signup, .login {
-        border-radius: 0;
-        margin-top: 0;
+    .signup, .login{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3;
@@ -258,6 +257,15 @@
     }
 
 
+  
+  
+  
+  
+  
+  
+
+
+
 
   
   
@@ -323,6 +331,22 @@
     }
 
 
+
+
+
+
+
+    /* All Agent Listings Page Styling */
+
+    .all-listing {
+        margin-top: 2rem;
+    }
+
+    .all-listing__table button {
+        margin-bottom: 0.2rem;
+    }
+
+
     /* Single Property Page Styling */
 
     .post__form {
@@ -346,6 +370,7 @@
 
 
 
+
     /* All Agent Listings Page Styling */
 
     .all-listing {
@@ -355,5 +380,6 @@
     .all-listing__table button {
         margin-bottom: 0.2rem;
     }
+
 
   }
