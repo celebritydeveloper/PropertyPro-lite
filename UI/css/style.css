@@ -1199,10 +1199,11 @@ tr:nth-child(even) {
 /* All Agents Page Styling */
 
 .all-agents,
-.single-agent {
+.single-agent,
+.user {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    margin: 0 auto;
+    margin: 2rem auto 0 auto;
     width: 90%;
 }
 
@@ -1369,4 +1370,11 @@ tr:nth-child(even) {
     font-weight: 500;
     margin: 0;
     margin-top: 0.5rem;
+}
+
+
+/* User Profile Page Styling */
+
+.user {
+    margin-top: 2rem;
 }
