@@ -1,13 +1,3 @@
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  let i, x = document.querySelectorAll(".step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class to the current step:
-  x[n].className += " active";
-}
-
 
 // Open and Close Mobile Nav Bar
 
@@ -93,6 +83,7 @@ function validateForm() {
   return valid; // return the valid status
 }
 
+
 function fixStepIndicator(n) {
   // This function removes the "active" class of all steps...
   let i, x = document.querySelectorAll(".step");
@@ -102,5 +93,6 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
+
 
 
