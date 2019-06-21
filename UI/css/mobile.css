@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (max-width: 480px) {
+
     .wrapper {
         display: block;
     }
@@ -54,6 +55,10 @@
     .login-btn {
         margin-top: 1rem;
         text-align: left;
+    }
+
+
+        display: none;
     }
 
     .signup__form, .login__form {
@@ -265,6 +270,10 @@
   
   
   
+
+
+
+
     /* Single Property Page Styling */
 
     .header-small {
@@ -361,6 +370,7 @@
 
 
 
+
     /* All Agents Page Styling */
 
     .all-agents {
@@ -395,6 +405,7 @@
 
     .aside {
         margin-top: 2.5rem;
+
     }
 
   }
