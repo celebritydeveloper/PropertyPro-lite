@@ -55,10 +55,6 @@
         text-align: left;
     }
 
-
-        display: none;
-    }
-
     .signup__form, .login__form {
         width: 100%;
     }
@@ -271,6 +267,12 @@
 
 
 
+  
+  
+  
+  
+  
+  
     /* Single Property Page Styling */
 
     .header-small {
@@ -363,5 +365,21 @@
     .post__form--button button {
         display: inline-block;
     }
+
+
+
+
+
+
+    /* All Agent Listings Page Styling */
+
+    .all-listing {
+        margin-top: 2rem;
+    }
+
+    .all-listing__table button {
+        margin-bottom: 0.2rem;
+    }
+
 
   }
