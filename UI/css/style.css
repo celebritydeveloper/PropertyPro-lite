@@ -1241,6 +1241,11 @@ tr:nth-child(even) {
     margin-bottom: 0;
 }
 
+.agents--name:hover a {
+    color: var(--light-green);
+    transition: .3s all ease-in-out;
+}
+
 .agents--company {
     color: var(--light-color);
     margin-top: 0.3rem;
