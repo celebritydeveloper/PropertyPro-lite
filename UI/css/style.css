@@ -141,7 +141,6 @@ img {
     font-size: 1.2rem;
     outline: none;
     padding: 0.5rem 1.5rem;
-
 }
 
 
@@ -276,6 +275,11 @@ img {
 }
 
 
+
+
+
+
+
 /* Home Page Styling */
 
 .header {
@@ -353,10 +357,6 @@ img {
     display: none;
 }
 
-.nav__mobile-close {
-    display: none;
-}
-
 
 .nav__mobile-close {
     display: none;
@@ -387,6 +387,11 @@ img {
     padding: 3rem 2rem;
     text-align: center;
     width: 90%;
+}
+
+
+.properties__header__form .form-field {
+    display: inline-block;
 }
 
 
@@ -971,10 +976,62 @@ img {
     background-color: var(--navy-blue);
     border: 1px solid var(--navy-blue);
     color: var(--white);
+    cursor: pointer;
     font-size: 1.1rem;
     padding: 0.7rem 1rem;
     text-transform: uppercase;
     width: 100%;
+}
+
+
+
+
+/* All Listing Page Styling*/
+
+.all-listings {
+    display: grid;
+}
+
+.all-listing {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.all-listing__table {
+    overflow-x:auto;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    background-color: var(--main-green);
+    color: var(--white);
+    height: 50px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: left; 
+    
+}
+
+tr:nth-child(even) {
+    background-color: var(--white);
+}
+
+
+.all-listings__number {
+    color: var(--main-green);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 
@@ -1107,4 +1164,3 @@ img {
 .pagnation__number a:hover {
     color: var(--main-green);
 }
-
