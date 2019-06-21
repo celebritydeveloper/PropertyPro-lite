@@ -494,7 +494,8 @@ img {
 }
 
 
-.how__title h1, .offer__title h1 {
+.how__title h1,
+.offer__title h1 {
     font-weight: 400;
     margin-bottom: 0;
 }
@@ -613,7 +614,10 @@ img {
     bottom: 45px;
 }
 
-.offer__label--type, .offer__label--status {
+.offer__label--type,
+.offer__label--status,
+.agent__label--type,
+.agent__label--status{
     align-content: center;
     background-color: var(--light-green);
     border-radius: 4px;
@@ -625,7 +629,8 @@ img {
     text-transform: uppercase;
 }
 
-.offer__label--status {
+.offer__label--status,
+.agent__label--status {
     background-color: var(--navy-blue);
     border-radius: 4px;
     color: var(--white);
@@ -1186,7 +1191,8 @@ tr:nth-child(even) {
 
 /* All Agents Page Styling */
 
-.all-agents {
+.all-agents,
+.single-agent {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 0 auto;
@@ -1197,21 +1203,22 @@ tr:nth-child(even) {
     box-shadow: 1px 1px 10px 2px var(--light-color);
     display: grid;
     grid-template-columns: 1fr 2fr;
-    
     margin-bottom: 2rem;
 }
 
-.agents__img {
+.agents__img,
+.agent__img {
     height: 100%;
 }
 
-.agents__img img {
+.agents__img img,
+.agent__img img {
     height: 100%;
 }
 
-.agents__detail {
-    background-color: var(--white);
-    
+.agents__detail,
+.agent__detail {
+    background-color: var(--white); 
 }
 
 .agents--name, .agents--company, .agents--desc, .agents__contact {
@@ -1264,4 +1271,95 @@ tr:nth-child(even) {
 .agents__listings:hover span {
     padding-left: 0.7rem;
     transition: .4s all ease-in-out;
+}
+
+
+
+
+
+/* Agent profile page styling */
+
+.agent__card {
+    background-color: var(--white);
+    box-shadow: 1px 1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-rows: 2;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+}
+
+.topper {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+.agent__offer__title {
+    background-color: var(--white);
+    color: var(--main-green);
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    text-transform: uppercase;
+}
+
+.agent__offer__title h2 {
+    font-weight: 400;
+    margin: 0;
+}
+
+.agent__detail button {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.agent__property {
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2rem;
+}
+
+.agent__property__img {
+    height: 100%;
+}
+
+
+.agent__property__img img {
+    height: 100%;
+}
+
+
+
+.agent__property__desc {
+    box-shadow: 1px -1px 10px 2px var(--light-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5;
+    padding: 0 1.5rem 1.3rem 1.5rem;
+}
+
+.agent__property--title {
+    font-size: 1.3rem;
+    font-weight: 420;
+    text-transform: uppercase;
+}
+
+.agent__property--title:hover a {
+    color: var(--light-green);
+    transition: .3s all ease-in-out;
+}
+
+.agent__desc__price {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0;
+}
+
+.agent__property--price {
+    color: var(--main-green);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    margin-top: 0.5rem;
 }
