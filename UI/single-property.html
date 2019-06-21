@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>PropertyPro-lite  Home</title>
+    <title>Single Property | PropertyPro-lite</title>
     <link rel="shortcut icon" href="./img/andela.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 </head>
@@ -35,6 +36,10 @@
                     <img src="./img/sendit-logo-1.png" alt="">
                 </div>
 
+                <div class="nav__mobile-bar">
+                    <span class="fa fa-bars" onclick="openNav()"></span>
+                </div>
+
                 <div class="nav__menu">
                     <ul class="menu--list">
                         <li><a href="index.html">Home</a></li>
@@ -43,6 +48,9 @@
                         <li><a href="login.html" class="btn btn-login">Login</a></li>
                         <li><a href="register.html" class="btn-signup">Signup</a></li>
                     </ul>
+                    <div class="nav__mobile-close">
+                        <span onclick="closeNav()">+</span>
+                    </div>
                 </div>
             </nav>
 
@@ -62,7 +70,7 @@
                     <p class="single--location"><span><i class="fa fa-map-marker-alt"></i></span> 2096 Monroe Street, Houston, 77030 USA</p>
                     <div class="single__label">
                         <p class="single__label--type">Villa for sale</p>
-                        <p class="single__label--status">Avialable</p>
+                        <p class="single__label--status">Available</p>
                     </div>
                 </div>
 
@@ -80,25 +88,25 @@
                     <div class="single__sub">
                         <h3>The Space</h3>
                         <div class="single__sub--facility">
-                            <p>Bathroom: <span>3</span></p>
+                            <p> <span><i class="fa fa-bath"></i></span> Bathroom: <span>3</span></p>
                         </div>
                         <div class="single__sub--facility">
-                            <p>Bedrooms: <span>3</span></p>
+                            <p><span><i class="fa fa-bed"></i></span> Bedrooms: <span>3</span></p>
                         </div>
                     </div>
 
                     <div class="single__sub">
                         <h3>Amenities</h3>
                         <div class="single__sub--facility">
-                            <p><span><i class="fa fa-bath"></i></span> Wifi</p>
+                            <p><span><i class="fa fa-wifi"></i></span> Wifi</p>
                         </div>
                         <div class="single__sub--facility">
-                            <p><span><i class="fa fa-bath"></i></span> Parking</p>
+                            <p><span><i class="fa fa-car"></i></span> Parking: <span>2</span></p>
                         </div>
                     </div>
 
                     <div class="single__sub">
-                        <h3>Avialability</h3>
+                        <h3>Availability</h3>
                         <div class="single__sub--facility">
                             <p class="sub--facility--available">Sold</p>
                         </div>
@@ -109,7 +117,7 @@
             <section class="aside">
                 <div class="aside__agent">
                     <div class="aside__agent--title">
-                        <h3>Contact our agent</h3>
+                        <h3>About agent</h3>
                     </div>
                     <div class="aside__agent--body">
                         <img src="./img/avatar.png" alt="">
@@ -121,7 +129,7 @@
 
                 <div class="aside__form">
                     <div class="aside__form--title">
-                        <h3>Contact our agent</h3>
+                        <h3>Contact agent</h3>
                     </div>
                     <form action="">
                         <div class="form-field">
@@ -145,5 +153,7 @@
             <footer class="footer">
                 <p class="copyright"> Designed by The Boring Dude. Let's Have a Drink on <span><i class="fab fa-github"></i></span> <a href="https://github.com/theboringdude"></a></p>
             </footer>
+
+    <script src="./js/app.js"></script>
 </body>
 </html>
