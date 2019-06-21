@@ -356,4 +356,45 @@
         margin-bottom: 0.2rem;
     }
 
+
+
+
+
+
+    /* All Agents Page Styling */
+
+    .all-agents {
+        margin: 3rem auto 0 auto;
+        width: 90%;
+    }
+
+    .agents__card {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+    .agents__img img {
+        width: 100%;
+    }
+
+    .agents--name, .agents--company, .agents--desc, .agents__contact {
+        padding: 0 0.3rem 0 1rem;
+    }
+
+    .agents__contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+    }
+
+
+    .agents--email, .agents--phone {
+        margin: 0.3rem 0;
+    }
+
+    .aside {
+        margin-top: 2.5rem;
+    }
+
   }
